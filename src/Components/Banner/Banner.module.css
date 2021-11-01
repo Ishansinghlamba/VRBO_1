@@ -1,0 +1,23 @@
+.banner {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  /* outline: tomato solid; */
+  background: rgba(0, 0, 0, 0.2);
+}
+.img_c {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.abs {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 32px;
+  text-shadow: 0 0 5px rgb(0 0 0 / 80%);
+}
