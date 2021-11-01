@@ -4,6 +4,7 @@
   height: 65px;
   /* outline: black solid; */
   background-color: rgb(249, 248, 247);
+  padding-right: 10px;
 }
 .main_nav > img {
   padding-left: 20px;
@@ -28,4 +29,31 @@
   margin-left: 2px;
   color: rgb(21, 50, 111);
   font-weight: bold;
+  font-size: small;
+}
+.div2 {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  height: 30%;
+  width: 6%;
+}
+.div2 > img {
+  width: 50%;
+  height: 90%;
+}
+.div2 > span {
+  margin-left: 2px;
+  color: rgb(21, 50, 111);
+  font-weight: bold;
+  font-size: small;
+}
+.lyp {
+  /* outline: rebeccapurple solid; */
+  border: 1px solid rgb(21, 50, 111);
+  border-radius: 20px;
+  color: rgb(21, 50, 111);
+  font-weight: bold;
+  padding: 8px 20px;
+  font-size: small;
 }
