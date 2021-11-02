@@ -1,8 +1,7 @@
-
+import styles from "../Crousel/Crousel.module.css"
 function Crousel() {
     return (
-        <div>
-            crousel
+        <div className={styles.cont}>
         </div>
     )
 }
