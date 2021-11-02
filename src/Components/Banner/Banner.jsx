@@ -8,6 +8,7 @@ function Banner() {
                 <h1 >Beach house? Condo? Cabin?</h1>
                 <h1>Find the perfect vacation rental</h1>
             </div>
+            <div className={styles.form}></div>
         </div>
     )
 }

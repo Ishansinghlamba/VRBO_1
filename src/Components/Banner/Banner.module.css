@@ -13,11 +13,21 @@
 .abs {
   position: absolute;
   top: 10%;
-  left: 10%;
+  left: 20%;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: normal;
   line-height: 32px;
   text-shadow: 0 0 5px rgb(0 0 0 / 80%);
+}
+.form {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  height: 80px;
+  width: 65%;
+  /* outline: solid yellow; */
+  background-color: rgb(245, 244, 243);
+  border-radius: 8px;
 }
