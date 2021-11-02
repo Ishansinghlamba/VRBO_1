@@ -1,8 +1,8 @@
 .container {
   position: absolute;
-  height: 600px;
+  height: 550px;
   width: 90%;
-  /* outline: yellow solid; */
+  outline: yellow solid;
   margin: auto;
   top: 400px;
   left: 5%;
