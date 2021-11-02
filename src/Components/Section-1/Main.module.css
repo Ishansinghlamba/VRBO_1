@@ -1,0 +1,13 @@
+.container {
+  position: absolute;
+  height: 400px;
+  width: 90%;
+  /* outline: yellow solid; */
+  margin: auto;
+  top: 400px;
+  left: 5%;
+  right: 5%;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
