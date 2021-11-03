@@ -1,4 +1,15 @@
 .slick-arrow.slick-prev,
 .slick-arrow.slick-next {
-  background-color: greenyellow;
+  /* background-color: greenyellow; */
+  z-index: 1;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+.slick-prev {
+  left: -55px;
+}
+.react-icons {
+  font-weight: lighter;
 }
