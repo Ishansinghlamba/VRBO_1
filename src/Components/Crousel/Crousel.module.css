@@ -17,7 +17,7 @@
   height: 90%;
   width: 85%;
   margin: auto;
-  outline: red solid;
+  /* outline: red solid; */
   padding-top: 10px;
 }
 .incon > h2 {
@@ -28,4 +28,10 @@
   color: #292929;
   font-size: 1.3rem;
   line-height: 2rem;
+}
+.card_cont {
+  height: 350px;
+  width: 20%;
+  /* outline: maroon solid; */
+  margin-right: 5%;
 }

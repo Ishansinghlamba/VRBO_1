@@ -28,20 +28,22 @@ function Crousel() {
         <div className={styles.cont}>
             <div className={styles.incon}>
             <h2>Find spaces that suit your style</h2>
-            <Slider prevArrow={<Prev/>} nextArrow={<Next/> } slidesToShow={4}>
-              {data.map((i)=>(<div>
-                  <Card item={i}/>
+            <Slider prevArrow={<Prev/>} nextArrow={<Next/> } slidesToShow={4} infinite={false}>
+              {data.map((i)=>(<div className={styles.card_cont}>
+                  <img src={i.image} alt="" />
               </div>))}
             </Slider>
             </div>
         </div>
     )
 }
-const Card =({item})=>{
-   console.log(item);
-   return(
-       <div></div>
-   )
-}
+// const Card =({item})=>{
+// //    console.log(item);
+//    return(
+//        <div className={styles.card_cont}>
+
+//        </div>
+//    )
+// }
 
 export default Crousel

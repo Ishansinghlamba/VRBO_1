@@ -2,7 +2,7 @@
   position: absolute;
   height: 500px;
   width: 90%;
-  outline: yellow solid;
+  /* outline: yellow solid; */
   margin: auto;
   top: 400px;
   left: 5%;
@@ -15,7 +15,7 @@
   height: 90%;
   width: 85%;
   margin: auto;
-  outline: pink solid;
+  /* outline: pink solid; */
   padding-top: 10px;
 }
 .img_cont > h2 {
