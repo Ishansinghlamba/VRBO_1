@@ -29,9 +29,10 @@ function Crousel() {
             <div className={styles.incon}>
             <h2>Find spaces that suit your style</h2>
             <Slider prevArrow={<Prev/>} nextArrow={<Next/> } slidesToShow={4} infinite={false}>
-              {data.map((i)=>(<div className={styles.card_cont}>
-                  <img src={i.image} alt="" />
-              </div>))}
+              {data.map((i)=>(<><div className={styles.card_cont}>
+                  <img src={i.image} alt="" className={styles.im}/>
+              </div><h3>{i.type}</h3>
+                  <p>{i.info}</p></>))}
             </Slider>
             </div>
         </div>

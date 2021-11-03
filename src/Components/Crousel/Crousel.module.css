@@ -3,7 +3,7 @@
   top: 900px;
   height: 400px;
   width: 90%;
-  outline: pink solid;
+  /* outline: pink solid; */
   left: 5%;
   right: 5%;
 }
@@ -30,8 +30,20 @@
   line-height: 2rem;
 }
 .card_cont {
+  overflow: hidden;
+  /* padding: 20px; */
   height: 350px;
-  width: 20%;
+  cursor: pointer;
+  /* width: 20%; */
   /* outline: maroon solid; */
-  margin-right: 5%;
+  /* margin-right: 10%; */
+}
+.im {
+  /* padding: 20px; */
+  transition: transform 0.8s ease;
+
+  object-fit: cover;
+}
+.card_cont:hover img {
+  transform: scale(1.1);
 }
