@@ -13,3 +13,19 @@
 .right {
   color: lightblue;
 }
+.incon {
+  height: 90%;
+  width: 85%;
+  margin: auto;
+  outline: red solid;
+  padding-top: 10px;
+}
+.incon > h2 {
+  font-family: FreightSansLF Pro, Noto Sans JP, Noto Sans KR, Helvetica Neue,
+    Helvetica, Arial, Lucida Grande, Segoe UI, Tahoma, -apple-system, Roboto,
+    sans-serif;
+  font-weight: 700;
+  color: #292929;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}

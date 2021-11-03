@@ -26,14 +26,22 @@ const Next=(props)=>{
 function Crousel() {
     return (
         <div className={styles.cont}>
-            <Slider prevArrow={<Prev/>} nextArrow={<Next/>}
->
+            <div className={styles.incon}>
+            <h2>Find spaces that suit your style</h2>
+            <Slider prevArrow={<Prev/>} nextArrow={<Next/> } slidesToShow={4}>
               {data.map((i)=>(<div>
-                  <img src={i} alt="mn" style={{width:"100%",height:"400px"}}/>
+                  <Card item={i}/>
               </div>))}
             </Slider>
+            </div>
         </div>
     )
+}
+const Card =({item})=>{
+   console.log(item);
+   return(
+       <div></div>
+   )
 }
 
 export default Crousel
