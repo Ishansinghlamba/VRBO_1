@@ -7,13 +7,13 @@ var img6 = "https://odis.homeaway.com/odis/destination/adf45333-140a-40cf-987f-b
 var img7 = "https://odis.homeaway.com/odis/destination/9af508c6-3dd9-453f-9a0d-8726a705328d.carousel-m.jpg";
 var img8 = "https://odis.homeaway.com/odis/destination/b7cb1fe3-5876-48a3-b9e4-c9b24d9f96b1.carousel-m.jpg"
 const data = [{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"},
-{image:img1,type:"Houses",info:"View 3321 Houses"}
+{image:img2,type:"Condos/ Apartments",info:"View 35 Condos"},
+{image:img3,type:"Cabins",info:"View 3321 Cabins"},
+{image:img4,type:"Studios",info:"View 21 Studios"},
+{image:img5,type:"Studios",info:"View 21 Houses"},
+{image:img6,type:"Cottages",info:"View 33215 cottages"},
+{image:img7,type:"Bunglows",info:"View 3 Bunglows"},
+{image:img8,type:"Townhouses",info:"View 332 Townhouses"}
           
 ]
 export {data};
