@@ -1,0 +1,22 @@
+.cont {
+  position: absolute;
+  top: 1500px;
+  height: 400px;
+  width: 90%;
+  /* outline: pink solid; */
+  left: 5%;
+  right: 5%;
+}
+.in {
+  display: flex;
+  height: 50%;
+  width: 85%;
+  margin: auto;
+  /* outline: springgreen solid; */
+}
+.out {
+  width: 23%;
+  height: 100%;
+  /* outline: solid rebeccapurple; */
+  margin-right: 3%;
+}
