@@ -16,7 +16,7 @@ function App() {
       <Main/>
       <Crousel/>
       <Extra/>
-      {open && <Modal/>}
+      {open && <Modal setOpen={setOpen}/>}
     </div>
   );
 }
