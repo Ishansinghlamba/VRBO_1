@@ -10,6 +10,8 @@
   justify-content: center;
 }
 .inner_mod {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-top: 100px;
   height: 650px;
@@ -32,4 +34,29 @@
   margin: 0;
   font-size: medium;
   color: rgb(255, 255, 255);
+}
+.blue > h2 {
+  padding: 0;
+  margin: 0;
+}
+.text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  font-weight: 400 !important;
+  color: #fff !important;
+  font-size: 2rem !important;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+}
+.inside_box {
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  height: 54%;
+  width: 90%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+  /* outline: violet solid; */
 }
