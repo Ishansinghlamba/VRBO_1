@@ -5,7 +5,7 @@ import {IoPersonAddOutline} from "react-icons/io5"
 import {AiOutlineQuestionCircle} from "react-icons/ai";
 import {BsCurrencyDollar} from "react-icons/bs"
 
-function Navbar() {
+function Navbar({setOpen}) {
     return (
         <div className={styles.main_nav}>
             <img src="https://csvcus.homeaway.com/rsrcs/cdn-logos/5.8.0/sitename/vrbo/web/logo.svg" alt="logo"/>
@@ -16,8 +16,8 @@ function Navbar() {
                <div className={styles.div1}><MdOutlinePersonOutline/>
                <span className={styles.dark}>Log in</span>
                </div>
-               <div className={styles.div1}><IoPersonAddOutline/>
-               <span className={styles.dark}>Sign up</span>
+               <div className={styles.div1} onClick={()=>{setOpen(true)}} ><IoPersonAddOutline/>
+               <span className={styles.dark} >Sign up</span>
 
                </div>
                <div className={styles.div1}><AiOutlineQuestionCircle/>
@@ -32,7 +32,7 @@ function Navbar() {
                    List your property
                </div>
 
-
+                     
             </div>
         </div>
     )

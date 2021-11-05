@@ -1,11 +1,14 @@
 .cont {
-  position: absolute;
-  top: 1500px;
+  /* position: absolute; */
+  /* top: 1500px; */
   height: 400px;
   width: 90%;
+  margin: 200px auto;
+  position: relative;
+  bottom: 50px;
   /* outline: pink solid; */
-  left: 5%;
-  right: 5%;
+  /* left: 5%;
+  right: 5%; */
 }
 .in {
   display: flex;

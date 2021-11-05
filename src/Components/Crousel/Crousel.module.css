@@ -1,11 +1,15 @@
 .cont {
-  position: absolute;
-  top: 900px;
+  /* position: absolute; */
+  /* top: 900px; */
   height: 400px;
   width: 90%;
+  margin: auto;
   /* outline: pink solid; */
-  left: 5%;
-  right: 5%;
+  position: relative;
+  bottom: 70px;
+  /* left: 5%; */
+  /* right: 5%; */
+  /* margin-bottom: 40px; */
 }
 .left {
   color: lightblue;
