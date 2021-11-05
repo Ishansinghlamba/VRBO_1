@@ -9,7 +9,7 @@ function Extra() {
             <div className ={styles.in}>
                 <div className={styles.out}>
                   <RiLock2Line size={30}/>
-                  <h3>Peace of mind</h3>
+                  <h3>Peace of mind yes</h3>
                   <p>Our Book with Confidence guarantee gives you 24/7 support.</p>
                 </div>
                 <div className={styles.out}>
