@@ -5,6 +5,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Main from "./Components/Section-1/Main";
 import {useState} from "react"
 import Modal from "./Components/Modal/Modal";
+import "./App.css"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Crousel/>
       <Extra/>
       {open && <Modal setOpen={setOpen}/>}
+      <div className="feedback">feedback</div>
     </div>
   );
 }
