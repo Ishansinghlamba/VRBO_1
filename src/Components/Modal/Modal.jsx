@@ -1,5 +1,6 @@
 import styles from "./Modal.module.css"
 import {useState} from "react"
+import axios  from "axios"
 function Modal({setOpen}) {
     const[user,setUser] = useState({
         email:"",
@@ -12,7 +13,14 @@ function Modal({setOpen}) {
         setUser({...user,[name]:value})
     }
     const register = ()=>{
-        
+         const {firstname,email,lastname,password} = user;
+         if(email && firstname && lastname && password){
+            axios.post("http://localhost:9002/signup")
+            .then((res)=>{console.log(res);})
+
+         } else{
+             alert("Invalid Input")
+         }
     }
     return (
         <div className={styles.modal}>
