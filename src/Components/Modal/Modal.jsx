@@ -1,5 +1,16 @@
 import styles from "./Modal.module.css"
+import {useState} from "react"
 function Modal({setOpen}) {
+    const[user,setUser] = useState({
+        email:"",
+        firstname:"",
+        lastname:"",
+        password:""
+    })
+    const handlechange =(e)=>{
+        const{name,value} = e.target;
+        setUser({...user,[name]:value})
+    }
     return (
         <div className={styles.modal}>
             <div className={styles.inner_mod}>
@@ -10,19 +21,19 @@ function Modal({setOpen}) {
                 <div className={styles.inside_box}>
                     {/* <input type="email" placeholder="Email Address" /> */}
                     <div className={styles.inputField}>
-                 <input type="text" placeholder=" " />
+                 <input type="text" placeholder=" " name="email" value={user.email} onChange={handlechange} />
                   <span>Email address</span>
                         </div>
                         <div className={styles.inputField}>
-                 <input type="text" placeholder=" " />
+                 <input type="text" placeholder=" " name="firstname" value={user.firstname} onChange={handlechange}/>
                   <span>First Name</span>
                         </div>
                         <div className={styles.inputField}>
-                 <input type="text" placeholder=" " />
+                 <input type="text" placeholder=" " name="lastname" value={user.lastname} onChange={handlechange}/>
                   <span>Last Name</span>
                         </div>
                         <div className={styles.inputField}>
-                 <input type="text" placeholder=" " />
+                 <input type="password" placeholder=" " name="password" value={user.password} onChange={handlechange}/>
                   <span>Password</span>
                         </div>
                         <div className={styles.btn}>Get Started</div>
