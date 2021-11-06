@@ -13,6 +13,19 @@ function Modal({setOpen}) {
                  <input type="text" placeholder=" " />
                   <span>Email address</span>
                         </div>
+                        <div className={styles.inputField}>
+                 <input type="text" placeholder=" " />
+                  <span>Email address</span>
+                        </div>
+                        <div className={styles.inputField}>
+                 <input type="text" placeholder=" " />
+                  <span>Email address</span>
+                        </div>
+                        <div className={styles.inputField}>
+                 <input type="text" placeholder=" " />
+                  <span>Email address</span>
+                        </div>
+                        <div className={styles.btn}>Get Started</div>
                 </div>
             </div>
         </div>

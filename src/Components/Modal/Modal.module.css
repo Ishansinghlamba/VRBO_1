@@ -75,7 +75,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 10%;
+  margin-top: 4%;
 }
 
 .inputField input {
@@ -121,4 +121,18 @@
   transition: all 0.2s;
   -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
   transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn {
+  padding: 16px 32px;
+  border-radius: 100px;
+  background-color: #245abc;
+  border-color: #245abc;
+  color: #fff;
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 24px;
+  /* outline: springgreen solid; */
+  margin-top: 10%;
+  cursor: pointer;
+  font-weight: 700;
 }
