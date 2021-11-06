@@ -15,15 +15,15 @@ function Modal({setOpen}) {
                         </div>
                         <div className={styles.inputField}>
                  <input type="text" placeholder=" " />
-                  <span>Email address</span>
+                  <span>First Name</span>
                         </div>
                         <div className={styles.inputField}>
                  <input type="text" placeholder=" " />
-                  <span>Email address</span>
+                  <span>Last Name</span>
                         </div>
                         <div className={styles.inputField}>
                  <input type="text" placeholder=" " />
-                  <span>Email address</span>
+                  <span>Password</span>
                         </div>
                         <div className={styles.btn}>Get Started</div>
                 </div>
