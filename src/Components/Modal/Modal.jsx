@@ -11,6 +11,9 @@ function Modal({setOpen}) {
         const{name,value} = e.target;
         setUser({...user,[name]:value})
     }
+    const register = ()=>{
+        
+    }
     return (
         <div className={styles.modal}>
             <div className={styles.inner_mod}>
@@ -36,7 +39,7 @@ function Modal({setOpen}) {
                  <input type="password" placeholder=" " name="password" value={user.password} onChange={handlechange}/>
                   <span>Password</span>
                         </div>
-                        <div className={styles.btn}>Get Started</div>
+                        <div className={styles.btn} onClick={register}>Get Started</div>
                 </div>
             </div>
         </div>
