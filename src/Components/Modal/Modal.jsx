@@ -15,8 +15,14 @@ function Modal({setOpen}) {
     const register = ()=>{
          const {firstname,email,lastname,password} = user;
          if(email && firstname && lastname && password){
-            axios.post("http://localhost:9002/signup")
-            .then((res)=>{console.log(res);})
+            axios.post("http://localhost:9002/signup",user)
+            .then((res)=>{
+                if(res.data.message === "User already registered"){
+                    alert("User is already registered, Please login")
+                } else{
+                    alert("Please login now.")
+                }
+            })
 
          } else{
              alert("Invalid Input")
