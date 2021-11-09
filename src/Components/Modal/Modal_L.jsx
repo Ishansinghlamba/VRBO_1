@@ -17,7 +17,13 @@ function Modal_L({setOpenl}) {
     const login =()=>{
         axios.post("http://localhost:9002/login",user_l)
         .then((res)=>{
-            console.log(res);
+            if(res.data.message === "User logged in succesfully"){
+                alert("Logged in succesfully")
+            } else if(res.data.message === "Password is not correct"){
+                alert("Password is not correct")
+            } else{
+                alert("User not Registered")
+            }
         })
     }
     return (
@@ -34,8 +40,8 @@ function Modal_L({setOpenl}) {
                   <span>Email address</span>
                         </div>
                         <div className={styles.inputField}>
-                 <input type="password" placeholder=" " value={user_l.password} onChange={handlechange}/>
-                  <span>First Name</span>
+                 <input type="password" placeholder=" " value={user_l.password} onChange={handlechange} name="password"/>
+                  <span>Password</span>
                         </div>
                         <div className={styles.btn} onClick={login}>Login</div>
                 </div>
