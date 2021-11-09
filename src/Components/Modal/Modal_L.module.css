@@ -19,3 +19,117 @@
   /* outline: solid blue; */
   background-color: white;
 }
+.blue {
+  position: relative;
+  background-color: rgb(30, 75, 158);
+  width: 100%;
+  height: 45%;
+}
+.cross {
+  cursor: pointer;
+  position: absolute;
+  top: 7%;
+  right: 7%;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  color: rgb(255, 255, 255);
+}
+.blue > h2 {
+  padding: 0;
+  margin: 0;
+}
+.text {
+  position: absolute;
+  top: 30%;
+  left: 7%;
+  font-weight: 400 !important;
+  color: #fff !important;
+  font-size: 2rem !important;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+}
+.inside_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 24%;
+  left: 5%;
+  height: 54%;
+  width: 90%;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 16px rgb(0 0 0 / 10%);
+
+  /* outline: violet solid; */
+}
+
+.inputField {
+  /* outline: blue solid; */
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 4%;
+}
+
+.inputField input {
+  padding: 10px 20px;
+  padding-top: 18px;
+  border: 1.8px solid rgba(107, 107, 107, 0.4);
+  border-radius: 3px;
+  width: 80%;
+  color: black;
+  font-size: large;
+}
+
+.inputField input:focus {
+  border: 1.8px solid blue;
+  outline: none;
+}
+
+.inputField span {
+  pointer-events: none;
+  opacity: 0.5;
+  position: absolute;
+  padding-left: 30px;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  cursor: text;
+}
+
+.inputField input:focus + span,
+.inputField input:not(:placeholder-shown) + span {
+  top: 7px;
+  -webkit-transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+  transform: scale(0.7) translateY(-10%) translateX(-8.5px);
+}
+
+.inputField input,
+.inputField span {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.btn {
+  padding: 16px 32px;
+  border-radius: 100px;
+  background-color: #245abc;
+  border-color: #245abc;
+  color: #fff;
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 24px;
+  /* outline: springgreen solid; */
+  margin-top: 10%;
+  cursor: pointer;
+  font-weight: 700;
+}
