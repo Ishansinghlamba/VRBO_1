@@ -5,7 +5,7 @@ import Navbar from "./Navbar/Navbar";
 import Main from "./Section-1/Main";
 import {useState} from "react";
 import "../App.css"
-// import Modal from "./Components/Modal/Modal";
+import Modal from "./Modal/Modal";
 function Home() {
     const [open,setOpen] = useState(false)
 
@@ -16,7 +16,7 @@ function Home() {
       <Main/>
       <Crousel/>
       <Extra/>
-      {/* {open && <Modal setOpen={setOpen}/>} */}
+      {open && <Modal setOpen={setOpen}/>}
       <div className="feedback">feedback</div>
         </div>
     )
