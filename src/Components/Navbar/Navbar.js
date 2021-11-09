@@ -5,7 +5,7 @@ import {IoPersonAddOutline} from "react-icons/io5"
 import {AiOutlineQuestionCircle} from "react-icons/ai";
 import {BsCurrencyDollar} from "react-icons/bs"
 
-function Navbar({setOpen}) {
+function Navbar({setOpen,setOpenl}) {
     return (
         <div className={styles.main_nav}>
             <img src="https://csvcus.homeaway.com/rsrcs/cdn-logos/5.8.0/sitename/vrbo/web/logo.svg" alt="logo"/>
@@ -13,7 +13,7 @@ function Navbar({setOpen}) {
                <div className={styles.div1}><AiOutlineHeart/>
                <span className={styles.dark}>Trip Boards</span>
                </div>
-               <div className={styles.div1}><MdOutlinePersonOutline/>
+               <div className={styles.div1} onClick={()=>{setOpenl(true)}}><MdOutlinePersonOutline/>
                <span className={styles.dark}>Log in</span>
                </div>
                <div className={styles.div1} onClick={()=>{setOpen(true)}} ><IoPersonAddOutline/>
