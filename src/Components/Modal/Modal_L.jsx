@@ -18,6 +18,7 @@ function Modal_L({setOpenl}) {
         axios.post("http://localhost:9002/login",user_l)
         .then((res)=>{
             if(res.data.message === "User logged in succesfully"){
+                console.log(res)
                 alert("Logged in succesfully")
             } else if(res.data.message === "Password is not correct"){
                 alert("Password is not correct")
