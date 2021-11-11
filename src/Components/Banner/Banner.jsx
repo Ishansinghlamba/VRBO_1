@@ -16,10 +16,11 @@ function Banner() {
                  <input type="text" placeholder=" " name="email" />
                   <span>Search Destination</span>
                         </div>
-                        <div className={styles.inputField}>
+                        <div className={`${styles.inputField} ${styles.check}`}>
                  <input type="text" placeholder=" " name="email" />
                   <span>Email address</span>
-                        </div><div className={styles.inputField}>
+                        </div>
+                        <div className={`${styles.inputField} ${styles.check1}`}>
                  <input type="text" placeholder=" " name="email" />
                   <span>Email address</span>
                         </div>
