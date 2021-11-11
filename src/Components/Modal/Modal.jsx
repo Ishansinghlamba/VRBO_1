@@ -1,7 +1,7 @@
 import styles from "./Modal.module.css"
 import {useState} from "react"
 import axios  from "axios"
-function Modal({setOpen}) {
+function Modal({setOpen,setOpenl}) {
     const[user,setUser] = useState({
         email:"",
         firstname:"",
@@ -22,6 +22,8 @@ function Modal({setOpen}) {
                 } else{
                     alert("Please login now.")
                 }
+                setOpen(false);
+                setOpenl(true);
             })
 
          } else{

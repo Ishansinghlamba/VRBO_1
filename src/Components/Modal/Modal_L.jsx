@@ -1,7 +1,9 @@
 import styles from "./Modal_L.module.css"
 import {useState} from "react"
 import axios  from "axios"
+
 function Modal_L({setOpenl}) {
+
     const[user_l,setuser_l] = useState({
         email:"",
         password:""
@@ -15,6 +17,7 @@ function Modal_L({setOpenl}) {
         })
     }
     const login =()=>{
+
         axios.post("http://localhost:9002/login",user_l)
         .then((res)=>{
             if(res.data.message === "User logged in succesfully"){
@@ -25,6 +28,8 @@ function Modal_L({setOpenl}) {
             } else{
                 alert("User not Registered")
             }
+            //  history.push("/home")
+            setOpenl(false)
         })
     }
     return (

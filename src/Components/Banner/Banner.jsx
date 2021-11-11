@@ -8,7 +8,19 @@ function Banner() {
                 <h1 >Beach house? Condo? Cabin?</h1>
                 <h1>Find the perfect vacation rental</h1>
             </div>
-            <div className={styles.form}></div>
+            <div className={styles.form}>
+            <div className={styles.inputField}>
+                 <input type="text" placeholder=" " name="email" />
+                  <span>Email address</span>
+                        </div>
+                        <div className={styles.inputField}>
+                 <input type="text" placeholder=" " name="email" />
+                  <span>Email address</span>
+                        </div><div className={styles.inputField}>
+                 <input type="text" placeholder=" " name="email" />
+                  <span>Email address</span>
+                        </div>
+            </div>
         </div>
     )
 }

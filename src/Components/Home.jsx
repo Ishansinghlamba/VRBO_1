@@ -18,7 +18,7 @@ function Home() {
       <Main/>
       <Crousel/>
       <Extra/>
-      {open && <Modal setOpen={setOpen}/>}
+      {open && <Modal setOpen={setOpen} setOpenl={setOpenl}/>}
       {openl && <Modal_L setOpenl={setOpenl}/>}
 
       <div className="feedback">feedback</div>
