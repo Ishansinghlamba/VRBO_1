@@ -55,6 +55,7 @@
   width: 90%;
   color: black;
   font-size: large;
+  cursor: pointer;
 }
 
 .inputField input:focus {
@@ -113,6 +114,7 @@
 }
 .check {
   width: 35%;
+  /* cursor: pointer; */
 }
 .check1 {
   width: 20%;

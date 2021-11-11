@@ -9,15 +9,17 @@ import {useState} from "react"
 
 function Banner() {
     const [startDate,setStartDate]=useState(new Date());
-    const [endDate,setEndDate]=useState(new Date())
+    const [endDate,setEndDate]=useState(new Date());
+    const [showDate,setShowDate]=useState(false)
 
     const selectionRange={
         startDate:startDate,
         endDate:endDate,
-        key:"Selection"
+        key:"selection"
     }
-    const handleSelect = ()=>{
-        
+    const handleSelect = (ranges)=>{
+        setStartDate(ranges.selection.startDate)
+        setEndDate(ranges.selection.endDate)
     }
     return (
         <>
@@ -33,7 +35,7 @@ function Banner() {
                  <input type="text" placeholder=" " name="email" />
                   <span>Search Destination</span>
                         </div>
-                        <div className={`${styles.inputField} ${styles.check}`}>
+                        <div className={`${styles.inputField} ${styles.check}`} onClick={()=>{setShowDate(!showDate)}}>
                  <input type="text" placeholder=" " name="email" />
                   <span>Email address</span>
                         </div>
@@ -44,11 +46,11 @@ function Banner() {
             <div className={styles.btn}>Search</div>
 
             </div>
-            <div className={styles.in_out}><DateRangePicker
+            { showDate && <div className={styles.in_out}><DateRangePicker
               ranges={[selectionRange]}
               minDate={new Date()}
               onChange={handleSelect}
-            /></div>
+            /></div>}
 
         </div>
         </>
