@@ -117,3 +117,14 @@
 .check1 {
   width: 20%;
 }
+.in_out {
+  top: 0;
+  left: 0;
+  position: absolute;
+  /* outline: pink solid; */
+  background-color: black;
+  top: 71.1%;
+  left: 27%;
+  width: 40%;
+  z-index: 1;
+}

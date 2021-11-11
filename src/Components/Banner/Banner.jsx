@@ -1,9 +1,26 @@
 import styles from "../Banner/Banner.module.css";
 import { MdOutlinePlace } from 'react-icons/md';
+import 'react-date-range/dist/styles.css';
+import 'react-date-range/dist/theme/default.css'; 
+import { DateRangePicker } from 'react-date-range';
+import {useState} from "react"
+
 
 
 function Banner() {
+    const [startDate,setStartDate]=useState(new Date());
+    const [endDate,setEndDate]=useState(new Date())
+
+    const selectionRange={
+        startDate:startDate,
+        endDate:endDate,
+        key:"Selection"
+    }
+    const handleSelect = ()=>{
+        
+    }
     return (
+        <>
         <div className={styles.banner}>
             <img src="https://odis.homeaway.com/odis/homepage/39a94c43-6566-4dd7-9e26-74a3355a1a9d.hw9.jpg" alt="logoi" className={styles.img_c} />
             <div className={styles.abs}>
@@ -27,7 +44,14 @@ function Banner() {
             <div className={styles.btn}>Search</div>
 
             </div>
+            <div className={styles.in_out}><DateRangePicker
+              ranges={[selectionRange]}
+              minDate={new Date()}
+              onChange={handleSelect}
+            /></div>
+
         </div>
+        </>
     )
 }
 
