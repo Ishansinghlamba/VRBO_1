@@ -1,4 +1,6 @@
 import styles from "../Banner/Banner.module.css";
+import { MdOutlinePlace } from 'react-icons/md';
+
 
 function Banner() {
     return (
@@ -10,8 +12,9 @@ function Banner() {
             </div>
             <div className={styles.form}>
             <div className={styles.inputField}>
+                <div className={styles.icon}><MdOutlinePlace size={25}/></div>
                  <input type="text" placeholder=" " name="email" />
-                  <span>Email address</span>
+                  <span>Search Destination</span>
                         </div>
                         <div className={styles.inputField}>
                  <input type="text" placeholder=" " name="email" />
@@ -20,6 +23,8 @@ function Banner() {
                  <input type="text" placeholder=" " name="email" />
                   <span>Email address</span>
                         </div>
+            <div className={styles.btn}>Search</div>
+
             </div>
         </div>
     )
