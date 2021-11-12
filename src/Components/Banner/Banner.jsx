@@ -4,11 +4,14 @@ import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css'; 
 import { DateRangePicker } from 'react-date-range';
 import {useState,useEffect,useRef} from "react"
-import {format} from "date-fns"
+import {format} from "date-fns";
+import {useHistory} from "react-router-dom"
+
 
 
 
 function Banner() {
+    const history = useHistory()
     const [startDate,setStartDate]=useState(new Date());
     const [endDate,setEndDate]=useState(new Date());
     const [showDate,setShowDate]=useState(false);
@@ -68,7 +71,7 @@ function Banner() {
                  <input type="number" placeholder=" " name="email" min={1}/>
                   <span>Guests</span>
                         </div>
-            <div className={styles.btn}>Search</div>
+            <div className={styles.btn} onClick={()=>{history.push("/search")}}>Search</div>
 
             </div>
             { showDate && <div className={styles.in_out}><DateRangePicker
