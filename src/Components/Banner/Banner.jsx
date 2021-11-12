@@ -17,6 +17,7 @@ function Banner() {
     const [showDate,setShowDate]=useState(false);
     const[checkin,setCheckin] = useState("Checkin")
     const[checkout,setCheckout] = useState("Checkout");
+    const [loc,setLoc] = useState("")
     const ref = useRef(0)
     useEffect(() => {
         if(ref.current ===0){
@@ -43,6 +44,7 @@ function Banner() {
         setStartDate(ranges.selection.startDate)
         setEndDate(ranges.selection.endDate)
     }
+    console.log(loc);
     return (
         <>
         <div className={styles.banner}>
@@ -54,7 +56,7 @@ function Banner() {
             <div className={styles.form}>
             <div className={styles.inputField}>
                 <div className={styles.icon}><MdOutlinePlace size={25}/></div>
-                 <input type="text" placeholder=" " name="email" />
+                 <input type="text" placeholder=" " name="email" value={loc} onChange={(e)=>{setLoc(e.target.value)}}/>
                   <span>Search Destination</span>
                         </div>
                         <div className={`${styles.check}`} onClick={()=>{setShowDate(!showDate)}}>
@@ -71,7 +73,12 @@ function Banner() {
                  <input type="number" placeholder=" " name="email" min={1}/>
                   <span>Guests</span>
                         </div>
-            <div className={styles.btn} onClick={()=>{history.push("/search")}}>Search</div>
+            <div className={styles.btn} onClick={()=>{history.push(
+                {
+                    pathname:"/search",
+                    state:{loc,checkout,checkin}
+                }
+            )}}>Search</div>
 
             </div>
             { showDate && <div className={styles.in_out}><DateRangePicker

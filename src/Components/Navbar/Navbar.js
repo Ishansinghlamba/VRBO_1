@@ -4,11 +4,14 @@ import {MdOutlinePersonOutline} from "react-icons/md"
 import {IoPersonAddOutline} from "react-icons/io5"
 import {AiOutlineQuestionCircle} from "react-icons/ai";
 import {BsCurrencyDollar} from "react-icons/bs"
+import {useHistory} from "react-router-dom"
+
 
 function Navbar({setOpen,setOpenl}) {
+    const history = useHistory()
     return (
         <div className={styles.main_nav}>
-            <img src="https://csvcus.homeaway.com/rsrcs/cdn-logos/5.8.0/sitename/vrbo/web/logo.svg" alt="logo"/>
+            <img src="https://csvcus.homeaway.com/rsrcs/cdn-logos/5.8.0/sitename/vrbo/web/logo.svg" alt="logo" onClick={()=>{history.push("/")}} className={styles.point}/>
             <div>
                <div className={styles.div1}><AiOutlineHeart/>
                <span className={styles.dark}>Trip Boards</span>

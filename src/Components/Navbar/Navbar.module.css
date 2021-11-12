@@ -58,3 +58,6 @@
   padding: 8px 20px;
   font-size: small;
 }
+.point {
+  cursor: pointer;
+}
