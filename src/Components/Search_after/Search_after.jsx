@@ -16,7 +16,15 @@ function Search_after() {
                    {data_city.map((i)=>(
                        <>
                           <div className={styles.card}>
+                             <div className={styles.img}>
+                                 <img src={i.img} alt="" className={styles.im}/>
+                             </div>
+                             <div className={styles.info}>
+                                   <h3>{i.name}</h3>
+                                   <p>Sleeps 10,4 bedroom, 2bed</p>
+                                   <h2 className={styles.self}>{i.price}</h2>
 
+                             </div>
                           </div>
                        </>
                    ))}

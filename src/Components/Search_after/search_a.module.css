@@ -14,8 +14,37 @@
   /* outline: tan solid; */
 }
 .card {
+  display: flex;
+  align-items: center;
   width: 90%;
   height: 300px;
-  outline: steelblue solid;
+  border: 1px solid black;
+  border-radius: 9px;
+  cursor: pointer;
+
   margin: 3% auto;
+}
+.img {
+  width: 40%;
+  height: 95%;
+  /* outline: peru solid; */
+  /* margin: 1%; */
+  margin-left: 1%;
+  border-radius: 5px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  width: 57%;
+  height: 95%;
+  /* outline: red solid; */
+  margin-left: 1%;
+}
+.im {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+.self {
+  align-self: flex-end;
 }
