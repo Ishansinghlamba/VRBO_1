@@ -20,15 +20,16 @@ function Banner() {
     const [loc,setLoc] = useState("")
     const ref = useRef(0)
     useEffect(() => {
+        console.log(ref.current)
         if(ref.current ===0){
             setCheckin("Checkin")
             setCheckout("Checkout")
             ref.current++
 
         } else{
-            const fstd = format(new Date(startDate.toISOString()),"dd -MMMM -yy");
+            const fstd = format(new Date(startDate.toISOString()),"dd /MM /yy");
         setCheckin(fstd)
-        const estd = format(new Date(endDate.toISOString()),"dd -MMMM -yy");
+        const estd = format(new Date(endDate.toISOString()),"dd /MM /yy");
         setCheckout(estd)
         
         }

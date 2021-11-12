@@ -1,17 +1,30 @@
 import React from 'react'
 import styles from "./search_a.module.css";
 import { useLocation } from "react-router-dom";
+import {data_city} from "./Search_data"
 
 
 
 function Search_after() {
     const { state } = useLocation();
 
-   console.log(state);
+   const{checkin,checkout,loc}= state
     return (
-        <div className={styles.data}>
-            <h2 className={styles.left}>Pune</h2>
-        </div>
+        <>
+           <div className={styles.outer}>
+               <div className={styles.data}>
+                   {data_city.map((i)=>(
+                       <>
+                          <div className={styles.card}>
+
+                          </div>
+                       </>
+                   ))}
+               </div>
+               <div className={styles.map}></div>
+           </div>
+
+        </>
     )
 }
 

@@ -1,8 +1,21 @@
-.data {
-  outline: solid pink;
-  height: 100px;
-  width: 100%;
+.outer {
+  display: flex;
+  width: 99%;
+  /* outline: springgreen solid; */
+  margin: auto;
+  /* height: 200px; */
 }
-.left {
-  margin-left: 3%;
+.data {
+  width: 60%;
+  /* outline: black solid; */
+}
+.map {
+  width: 40%;
+  /* outline: tan solid; */
+}
+.card {
+  width: 90%;
+  height: 300px;
+  outline: steelblue solid;
+  margin: 3% auto;
 }
