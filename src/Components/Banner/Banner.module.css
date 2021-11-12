@@ -74,6 +74,10 @@
   transform: translateY(-50%);
   cursor: text;
 }
+/* .le {
+  outline: blueviolet solid;
+  left: 100%;
+} */
 
 .inputField input:focus + span,
 .inputField input:not(:placeholder-shown) + span {
@@ -113,8 +117,28 @@
   top: 29%;
 }
 .check {
+  display: flex;
+  justify-content: space-evenly;
   width: 35%;
-  /* cursor: pointer; */
+  /* outline: blueviolet solid; */
+  padding: 20px 20px;
+  padding-top: 18px;
+  border: 1.8px solid rgba(107, 107, 107, 0.4);
+  border-radius: 3px;
+  background-color: white;
+}
+.checkin {
+  /* outline: springgreen solid; */
+  width: 50%;
+  text-align: center;
+  color: rgb(128, 128, 128);
+}
+.checkout {
+  /* outline: springgreen solid; */
+  width: 50%;
+  text-align: center;
+  color: rgb(128, 128, 128);
+  /* margin-left: 9%; */
 }
 .check1 {
   width: 20%;
@@ -124,7 +148,7 @@
   left: 0;
   position: absolute;
   /* outline: pink solid; */
-  background-color: black;
+  /* background-color: black; */
   top: 71.1%;
   left: 27%;
   width: 40%;

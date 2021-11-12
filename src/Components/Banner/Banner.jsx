@@ -3,14 +3,33 @@ import { MdOutlinePlace } from 'react-icons/md';
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css'; 
 import { DateRangePicker } from 'react-date-range';
-import {useState} from "react"
+import {useState,useEffect,useRef} from "react"
+import {format} from "date-fns"
 
 
 
 function Banner() {
     const [startDate,setStartDate]=useState(new Date());
     const [endDate,setEndDate]=useState(new Date());
-    const [showDate,setShowDate]=useState(false)
+    const [showDate,setShowDate]=useState(false);
+    const[checkin,setCheckin] = useState("Checkin")
+    const[checkout,setCheckout] = useState("Checkout");
+    const ref = useRef(0)
+    useEffect(() => {
+        if(ref.current ===0){
+            setCheckin("Checkin")
+            setCheckout("Checkout")
+            ref.current++
+
+        } else{
+            const fstd = format(new Date(startDate.toISOString()),"dd -MMMM -yy");
+        setCheckin(fstd)
+        const estd = format(new Date(endDate.toISOString()),"dd -MMMM -yy");
+        setCheckout(estd)
+        
+        }
+        
+    }, [startDate,endDate])
 
     const selectionRange={
         startDate:startDate,
@@ -35,13 +54,19 @@ function Banner() {
                  <input type="text" placeholder=" " name="email" />
                   <span>Search Destination</span>
                         </div>
-                        <div className={`${styles.inputField} ${styles.check}`} onClick={()=>{setShowDate(!showDate)}}>
-                 <input type="text" placeholder=" " name="email" />
-                  <span>Email address</span>
+                        <div className={`${styles.check}`} onClick={()=>{setShowDate(!showDate)}}>
+                            <div className={styles.checkin}>
+                                 {checkin}
+                            </div>
+                            <div className={styles.checkout}>
+                                 {checkout}
+                            </div>
+
+
                         </div>
                         <div className={`${styles.inputField} ${styles.check1}`}>
-                 <input type="text" placeholder=" " name="email" />
-                  <span>Email address</span>
+                 <input type="number" placeholder=" " name="email" min={1}/>
+                  <span>Guests</span>
                         </div>
             <div className={styles.btn}>Search</div>
 
