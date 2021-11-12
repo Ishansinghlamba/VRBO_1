@@ -1,8 +1,12 @@
 import Navbar from "./Navbar/Navbar"
-function Search() {
+import Modal from "./Modal/Modal"
+import Modal_L from "./Modal/Modal_L"
+function Search({setOpen,setOpenl,open,openl}) {
     return (
         <div>
-            <Navbar/>
+            <Navbar setOpen={setOpen} setOpenl={setOpenl}/>
+            {open && <Modal setOpen={setOpen} setOpenl={setOpenl}/>}
+      {openl && <Modal_L setOpenl={setOpenl}/>}
         </div>
     )
 }

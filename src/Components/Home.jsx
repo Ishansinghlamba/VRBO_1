@@ -3,13 +3,10 @@ import Crousel from "./Crousel/Crousel";
 import Extra from "./Extra/Extra";
 import Navbar from "./Navbar/Navbar";
 import Main from "./Section-1/Main";
-import {useState} from "react";
 import "../App.css"
 import Modal from "./Modal/Modal";
 import Modal_L from "./Modal/Modal_L";
-function Home() {
-    const [open,setOpen] = useState(false);
-    const [openl,setOpenl] = useState(false)
+function Home({setOpen,setOpenl,open,openl}) {
 
     return (
         <div>
